@@ -1,0 +1,177 @@
+body {
+	/* background: url(../img/bg.png) 50% 50% no-repeat;
+	background-size: cover; */
+
+	background-color: black;
+	color: white;
+}
+
+main{
+
+}
+
+figure {
+	margin-bottom: 40%;
+    transform: translateZ(-50px) scale(1.0);
+    position: absolute;
+    z-index: 2;
+    
+}
+
+img{
+	width:100%;
+	position: relative;
+
+}
+
+section{
+	position: relative;
+}
+
+.parallax {
+
+	perspective: 300px; /*smaller number is larger effect */
+	height: 90vh;  /*vertical height like percent but better somehow */
+	overflow-x: hidden;
+	overflow-y: auto;
+}
+
+.parallax-layer {
+	position: absolute;
+	top:0;
+	right:0;
+	bottom: 0;
+	left: 0;
+	padding: 0; /* add some padding foreces the scroll somehow */
+}
+
+.parallax-mid {
+	transform: translateZ(0px);
+	/* transform: translateZ(-1px) scale(2); */		
+}
+
+.parallax-back {
+	transform: translateZ(250px) translateY(160px) scale(.125);
+	/* transform: translateZ(-2px) scale(3); */
+	z-index: 2;
+	padding-top: 0px;
+	/* perspective: 10px; */
+
+
+
+}
+
+.parallax-shelf {
+	transform: translateZ(150px) translateY(-163px) scale(.5);
+	/* transform: translateZ(-2px) scale(3); */
+	z-index: 3;
+	padding-top: 0px;
+	perspective: .1px;
+
+
+
+}
+
+.parallax-desk {
+	transform: translateZ(50px) translateY(-225px) scale(.6);
+	/* transform: translateZ(-2px) scale(3); */
+	z-index: 1;
+	padding-top: 0px;
+	perspective: .2px;
+
+
+
+}
+
+.parallax-bg {
+	transform: translateZ(5px) translateY(-225px) scale(1);
+	/* transform: translateZ(-2px) scale(3); */
+	z-index: 0;
+	padding-top: 0px;
+	perspective: 10px;
+	opacity: 0.5;
+
+
+
+}
+
+.parallax-logo {
+	transform: translateZ(100px) translateY(335px) scale(.7);
+	/* transform: translateZ(-2px) scale(3); */
+	z-index: 4;
+	padding-top: 0px;
+	perspective: 50px;
+	opacity: 0.5;
+
+
+
+}
+
+.parallax-silo {
+	transform: translateZ(-10px) translateY(390px) scale(.7);
+	/* transform: translateZ(-2px) scale(3); */
+	z-index: 5;
+	padding-top: 0px;
+	perspective: 1px;
+
+
+
+}
+
+.parallax-hat {
+	transform: translateZ(250px) translateY(950px) scale(.15);
+	/* transform: translateZ(-2px) scale(3); */
+	z-index: 6;
+	padding-top: 0px;
+	perspective: .11px;
+
+
+
+}
+
+.parallax-text {
+	transform: translateZ(250px) translateY(100px) scale(.15);
+	/* transform: translateZ(-2px) scale(3); */
+	z-index: 20;
+	padding-top: 0px;
+	perspective: .11px;
+
+
+
+}
+
+.parallax-text2 {
+	transform: translateZ(250px) translateY(550px) scale(.15);
+	/* transform: translateZ(-2px) scale(3); */
+	z-index: 20;
+	padding-top: 0px;
+	perspective: .11px;
+
+
+
+}
+
+.parallax-text3 {
+	transform: translateZ(250px) translateY(1212px) scale(.15);
+	/* transform: translateZ(-2px) scale(3); */
+	z-index: 20;
+	padding-top: 0px;
+	perspective: .11px;
+
+
+
+}
+
+.base {
+
+  transform: translateZ(0) scale(1);
+  z-index: 1;
+
+}
+
+.foreground{
+
+  transform: translateZ(0) translateY(0) scale(1);
+  z-index: 10;
+
+}
